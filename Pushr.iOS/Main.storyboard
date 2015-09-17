@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="5" translatesAutoresizingMaskIntoConstraints="NO" textAlignment="center" fixedFrame="YES" hidden="YES">
+                                <rect key="frame" x="13" y="270" width="349" height="95"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="134" y="302" width="106" height="30"/>
+                                <state key="normal" title="Push up time">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="142" y="318.5" width="91" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="StartButton_TouchUpInside:" destination="BYZ-38-t0r" id="23" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="21" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" hidden="YES">
+                                <rect key="frame" x="309" y="617" width="46" height="30"/>
+                                <state key="normal" title="Start over">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="281" y="617" width="74" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="RestartButton_TouchUpInside:" destination="BYZ-38-t0r" id="22" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="82" translatesAutoresizingMaskIntoConstraints="NO" hidden="YES" fixedFrame="YES">
+                                <rect key="frame" x="164" y="148" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="PushUpTap_TouchUpInside:" destination="BYZ-38-t0r" id="92" eventType="touchUpInside"/>
+                                </connections>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="164" y="148" width="46" height="30"/>
+                                </variation>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Pushr.iOS" lineBreakMode="tailTruncation" minimumFontSize="10" id="147" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="166" y="62" width="42" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="147.5" y="28" width="80" height="21"/>
+                                    <mask key="constraints">
+                                        <include reference="151"/>
+                                        <include reference="152"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="151" firstAttribute="width" constant="80"/>
+                                    <constraint id="152" firstAttribute="height" constant="21"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="151"/>
+                                        <exclude reference="152"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <rect key="frame" x="0.0" y="50" width="76" height="20.5"/>
+                                    <mask key="constraints">
+                                        <include reference="177"/>
+                                        <include reference="178"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="21"/>
+                                <exclude reference="82"/>
+                                <exclude reference="147"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="175"/>
+                                <exclude reference="176"/>
+                                <exclude reference="190"/>
+                                <exclude reference="191"/>
+                                <exclude reference="213"/>
+                                <exclude reference="217"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="21"/>
+                                <include reference="82"/>
+                                <include reference="147"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="83"/>
+                                <include reference="149"/>
+                                <include reference="190"/>
+                                <include reference="191"/>
+                                <include reference="213"/>
+                                <include reference="217"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="103"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="175"/>
+                                <include reference="176"/>
+                                <include reference="179"/>
+                                <include reference="180"/>
+                            </mask>
+                        </variation>
+                        <constraints>
+                            <constraint id="190" firstItem="147" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="0.0"/>
+                            <constraint id="191" constant="28" firstItem="147" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top"/>
+                            <constraint id="213" firstItem="8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="0.0"/>
+                            <constraint firstItem="8bC-Xf-vdC" firstAttribute="centerY" secondItem="8" secondAttribute="centerY" constant="0.0" id="217"/>
+                        </constraints>
+                        <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                    </view>
+                    <connections>
+                        <outlet property="PushUpCount" destination="5" id="name-outlet-5"/>
+                        <outlet property="StartButton" destination="8" id="name-outlet-8"/>
+                        <outlet property="RestartButton" destination="21" id="name-outlet-21"/>
+                        <outlet property="PushUpTap" destination="82" id="name-outlet-82"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination" type="retina47"/>
+        <simulatedOrientationMetrics key="orientation"/>
+    </simulatedMetricsContainer>
+</document>
