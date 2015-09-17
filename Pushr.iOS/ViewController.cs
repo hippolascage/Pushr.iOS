@@ -30,6 +30,7 @@ namespace Pushr.iOS
 		}
 
 		partial void StartButton_TouchUpInside(UIButton sender) {
+			pushUpCounter.IncrementCount();
 			UpdateCountLabel();
 			StartButton.Hidden = true;
 			PushUpCount.Hidden = false;
@@ -38,11 +39,8 @@ namespace Pushr.iOS
 		}
 
 		partial void RestartButton_TouchUpInside(UIButton sender) {
-			PushUpCount.Hidden = true;
-			StartButton.Hidden = false;
-			RestartButton.Hidden = true;
-			PushUpTap.Hidden = true;
 			pushUpCounter.ResetCount();
+			UpdateCountLabel();
 		}
 
 
